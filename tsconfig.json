@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"baseUrl": "src",
+		"lib": ["dom", "es2017"],
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"outDir": "lib",
+		"removeComments": false,
+		"rootDir": "src",
+		"target": "es2017",
+		"typeRoots": ["node_modules/@types"],
+
+		"alwaysStrict": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"strictNullChecks": true
+	},
+	"include": [
+		"src/**/*"
+	]
+}
