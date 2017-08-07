@@ -1,18 +1,23 @@
 {
 	"name": "absolute-path-converter",
-	"version": "1.0.2",
+	"version": "1.0.4",
 	"description": "Converts absolute module paths to relative paths",
-	"author": "Petri Kivikangas <petri.kivikangas@protonmail.com>",
+	"author": "Petri Kivikangas <petri.kivikangas@protonmail.com> (https://github.com/Kitanotori)",
 	"license": "Apache-2.0",
 	"keywords": [
 		"Node",
 		"absolute",
-		"paths"
+		"paths",
+		"typescript"
 	],
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Kitanotori/absolute-path-converter.git"
 	},
+	"bugs": {
+		"url": "https://github.com/Kitanotori/absolute-path-converter/issues"
+	},
+	"homepage": "https://github.com/Kitanotori/absolute-path-converter#readme",
 	"engines": {
 		"node": ">=8.0.0"
 	},
