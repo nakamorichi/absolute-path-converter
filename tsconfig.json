@@ -1,12 +1,14 @@
 {
 	"compilerOptions": {
 		"baseUrl": "src",
+		"declaration": true,
 		"lib": ["dom", "es2017"],
 		"module": "commonjs",
 		"moduleResolution": "node",
 		"outDir": "lib",
-		"removeComments": false,
+		"removeComments": true,
 		"rootDir": "src",
+		"sourceMap": true,
 		"target": "es2017",
 		"typeRoots": ["node_modules/@types"],
 

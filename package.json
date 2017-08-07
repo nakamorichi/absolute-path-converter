@@ -1,6 +1,6 @@
 {
 	"name": "absolute-path-converter",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "Converts absolute module paths to relative paths",
 	"author": "Petri Kivikangas <petri.kivikangas@protonmail.com>",
 	"license": "Apache-2.0",
@@ -37,5 +37,8 @@
 		"tslint-config-airbnb": "^5.1.0",
 		"tsutils": "^2.3.0",
 		"typescript": "^2.4.0"
+	},
+	"optionalDependencies": {
+		"source-map-support": ">=0.4.0"
 	}
 }
