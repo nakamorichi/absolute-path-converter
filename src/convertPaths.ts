@@ -3,6 +3,8 @@ import * as recursive from 'recursive-readdir';
 import * as Fs from 'fs';
 import * as xregexp from 'xregexp';
 
+const HAS_BACKSLASH_SEPARATOR = Path.sep === '\\';
+
 try {
 	require('source-map-support').install();
 } catch (error) {
@@ -27,6 +29,10 @@ export const convertPaths = (conversionTargetRoot?: string) => {
 					} catch (error) {
 						let newRequirePath = Path.relative(`${file}/..`, `${conversionTargetRoot}/${modulePath}`);
 						if (newRequirePath[0] !== '.') newRequirePath = './' + newRequirePath;
+						// Fix backslash path separator
+						if (HAS_BACKSLASH_SEPARATOR) {
+							newRequirePath = newRequirePath.replace(/\\/g, '/');
+						}
 						return `require("${newRequirePath}")`;
 					}
 				},

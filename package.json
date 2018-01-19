@@ -1,6 +1,6 @@
 {
 	"name": "absolute-path-converter",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Converts absolute module paths to relative paths",
 	"author": "Petri Kivikangas <petri.kivikangas@protonmail.com> (https://github.com/Kitanotori)",
 	"license": "Apache-2.0",
